@@ -27,10 +27,41 @@ a:hover {
 .logo {
     width:400px;
     height:110px;
+    padding: 1px 1px 8px 1px;
     }
     .centrar {text-align:center}
 
     .lista-menu {text-align: start;}
+
+/* Animaciones */
+
+
+.animacion: {transition: all 2s}
+
+.animacion:hover{
+    height:min-content;
+    border: solid black;
+    border-radius: 20%;
+}
+
+.gradiente{
+    background-image: linear-gradient(120deg, rgb(179, 54, 37) 50%,rgb(0, 0, 0) 70%);
+    margin: 2px 1px 10px 1px ;
+    padding: 5px;
+    color: whitesmoke
+}
+
+.transicion {
+    transition: all 0.5s
+/* Primero se le aplica el tiempo */
+}
+
+.transicion:hover{
+    width: 40%;
+    height: 25px;
+    background-color: black;
+    color:white;
+}
 
 
 /* Menu */
