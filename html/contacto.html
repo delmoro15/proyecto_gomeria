@@ -5,61 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/gridsarea.css">
 </head>
 <body>
     <div id="grid">
         <header class="border"> <img src="../img/logo_negro.png" class="logo"> </img></header>
         
-        <section id="articulo" class="border">    
-            <h3 class="gradiente"> Contactanos</h3>
-        <fieldset class="contact-flex"> 
-            <legend> Datos de contacto</legend>
-        <form class="form-flex" action="">
-            <label for="nombre"> Nombre: </label>
-            <input type="text" name="nombre"> 
-            <label for="clave"> Apellido: </label>
-            <input type="text" name="apellido"> 
-            <label for="correo"> Correo: </label>
-            <input type="email" name="correo"> 
+        <section id="articulo" class="border">   
             
-            <!-- Caja de texto-->
+                        
+            <nav class="navbar navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./productos.html"> Productos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./ideas.html"> Ideas y consejos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./quienes_somos.html"> Quienes somos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html"> Contacto </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Proximamente
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
 
-            <label for="comentario"> Comentarios:</label>
-            <textarea name="comentario" cols="25" rows="15"> </textarea>  
-            <p>hombre</p>
-            <input type="radio" name="sexo" value="hombre" />
-            <p> mujer </p>
-            <input type="radio" name="sexo" value="mujer" />
-            <p> prefiero no decir</p>
-            <input type="radio" name="sexo" value="prefiero no decir" />
-            
-            <p> Acepta terminos y condiciones</p>
-            <input type="checkbox" name="acepta" value="1" />
-            <input type="submit" value="Enviar Formulario"/>
-            <input type="reset" value="Limpiar Formulario"/>
-        </form>
-        </fieldset>
-    </main>
             </section>
         <section id="articulo2" class="border">
+            
+            <h3 class="gradiente scale-up-center"> Contactanos</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="well well-sm">
+                            <form class="form-horizontal" method="post">
+                                <fieldset>
+                                    <legend class="text-center header"></legend>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                        </div>
+                                    </div>
 
-        <h4 class="gradiente"> Ubicanos a traves de Google Maps </h4>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" type="text" placeholder="Correo" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                        <div class="col-md-8">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Dejanos un mensaje." rows="7"></textarea>
+                                        </div>
+                                    </div>
+            
+                                    <div class="form-group">
+                                        <div class="col-md-12 text-center">
+                                            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <h4 class="gradiente scale-up-center"> Ubicanos a traves de Google Maps </h4>
         
         <iframe class= "img" src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26260.923171473027!2d-58.55390258437505!3d-34.639158299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9643f32ee6b%3A0x5ec11f4d91ba9ad6!2sPirelli!5e0!3m2!1ses-419!2sar!4v1657499483408!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="tamaño-mapa centrar"></iframe>
 
             
         </section>
-        <nav class="border">
-            <ul class="menu-flex">
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="./productos.html"> Productos </a> </li>
-                <li> <a href="./ideas.html"> Ideas y consejos </a> </li>
-                <li> <a href="./quienes_somos.html"> Quienes somos </a> </li>
-                <li> <a href="./contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
-        <footer class="border footer"><p>todos los derechos reservados 2022</p></footer>
+
+        <footer class="border footer">
+            <p>todos los derechos reservados 2022</p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        </footer>
 </body>
 </div>
 </div>
