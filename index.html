@@ -4,43 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto Gomeria</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="./css/gridsarea.css">
 </head>
 <body>
     <div id="grid">
-        <header class="border"> <img src="./img/logo_negro.png" class="logo"> </img></header>
+        <header class="border"> <img src="./img/logo_negro.png" class="logo scale-up-center"> </img></header>
         
-        <section id="articulo" class="border scale-up-center">    
-            <h3 class="gradiente"> Te presentamos la nueva cubierta Sense-2 </h3>
+        <section id="articulo" class="">  
+            
+        <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="./html/productos.html"> Productos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/ideas.html"> Ideas y consejos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/quienes_somos.html"> Quienes somos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/contacto.html"> Contacto </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Proximamente
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
+            
+            
+            </section>
+        <section id="articulo2" class="">
+            <h3 class="gradiente scale-up-center"> Te presentamos la nueva cubierta Sense-2 </h3>
             <img class= "img animacion"src="https://i.pinimg.com/originals/77/60/31/77603109ffd37400377cfa9eaaa059f6.gif" > </img> 
             <p> Te acompañara en cualquier camino, brindandote la mejor comodidad </p>
-            </section>
-        <section id="articulo2" class="border scale-up-center">
-            <h3 class="gradiente">En Neumaticos Del Moro revisamos:</h3>
+
+            <h3 class="gradiente scale-up-center">En Neumaticos Del Moro revisamos:</h3>
             <ol> <span class="transicion"> Neumáticos </span>
                 <span class="transicion"> Llantas </span>
                 <span class="transicion"> Valvulas </span>
                 <span class="transicion"> Alineacion y balanceo </span>
                 </ol> 
-        <p class="centrar">Llevamos más de 50 años innovando en servicios de Gomería, para brindar una experiencia única a nuestros clientes. Tenemos una gran variedad de neumáticos, que se ajustan a las necesidades de cada uno de nuestros clientes.
+        <p class="about">Llevamos más de 50 años innovando en servicios de Gomería, para brindar una experiencia única a nuestros clientes. Tenemos una gran variedad de neumáticos, que se ajustan a las necesidades de cada uno de nuestros clientes.
         
         Realizamos: reparaciones de llantas y cambio de válvulas. Contamos con tecnología de vanguardia para la realización del balanceo computarizado de los neumáticos, brindando de esta manera una mejor experiencia de manejo para nuestros clientes más exigentes. Nuestros especialistas en GOMERÍA realizan periódicamente capacitaciones para conocer acerca de las últimas novedades del mercado, y así poder brindar un servicio más eficiente. </p>
     
-        <h4 class="gradiente"> Ubicanos a traves de Google Maps </h4>
-        <iframe class= "img" src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26260.923171473027!2d-58.55390258437505!3d-34.639158299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9643f32ee6b%3A0x5ec11f4d91ba9ad6!2sPirelli!5e0!3m2!1ses-419!2sar!4v1657499483408!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="tamaño-mapa centrar"></iframe> <br>
+        <h4 class="gradiente scale-up-center"> Ubicanos a traves de Google Maps </h4>
+        <iframe class= "img" src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26260.923171473027!2d-58.55390258437505!3d-34.639158299999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9643f32ee6b%3A0x5ec11f4d91ba9ad6!2sPirelli!5e0!3m2!1ses-419!2sar!4v1657499483408!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="tamaño-mapa centrar scale-up-center"></iframe> <br>
         
         </section>
-        <nav class="border">
-            <ul class="menu-flex scale-up-center">
-                <li> <a href="index.html"> Inicio </a> </li>
-                <li> <a href="./html/productos.html"> Productos </a> </li>
-                <li> <a href="./html/ideas.html"> Ideas y consejos </a> </li>
-                <li> <a href="./html/quienes_somos.html"> Quienes somos </a> </li>
-                <li> <a href="./html/contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
-        <footer class="border footer"><p>todos los derechos reservados 2022</p></footer>
+        <footer>
+            <p>todos los derechos reservados 2022</p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        </footer>
 </body>
 </div>
 </div>

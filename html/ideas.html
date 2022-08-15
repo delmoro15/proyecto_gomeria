@@ -5,36 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/gridsarea.css">
 </head>
 <body>
     <div id="grid">
         <header class="border"> <img src="../img/logo_negro.png" class="logo"> </img></header>
         
-        <section id="articulo" class="border">    
+        <section id="articulo" class="border">  
+                        
+            <nav class="navbar navbar-light bg-light sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./productos.html"> Productos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./ideas.html"> Ideas y consejos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./quienes_somos.html"> Quienes somos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./contacto.html"> Contacto </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Proximamente
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                    <li>
+                                    <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </nav>
 
-            <h3 class="gradiente"> Aca te enseñaremos los mejores tips para cuidar tu neumatico</h3>
-        <p>Los neumáticos son unos de los grandes olvidados en el mantenimiento de nuestros coches. A veces por dejadez, otras por desconocimiento y otras por querer ahorrar unos pesos, el caso es que muchos neumáticos pasan más tiempo de lo debido montados en nuestros coches, muchas veces en condiciones que ponen en riesgo la seguridad durante la conducción.
-        <p class="centrar"><img class="img"src="https://img.remediosdigitales.com/7d63d4/tyre-1714669_1280/1366_2000.jpg"></img></p>
 
         </section>
 
+
         <section id="articulo2" class="border">
-            Este es un error muy común en buena parte de los conductores, pero no por eso se trata de un error menor. Hay que recordar que los neumáticos son un punto vital en la seguridad del automóvil, ya que suponen el único punto de contacto entre el suelo y el vehículo.</p><br>
-            <a href="https://www.youtube.com/watch?v=EHT3o4Pe8PU" target="_blank"><h4 class="link-negro">Presiona aca para ver un video explicativo</h4></a>
+            <h3 class="gradiente scale-up-center"> Aca te enseñaremos los mejores tips para cuidar tu neumatico</h3>
+            <p class="about">Los neumáticos son unos de los grandes olvidados en el mantenimiento de nuestros coches. A veces por dejadez, otras por desconocimiento y otras por querer ahorrar unos pesos, el caso es que muchos neumáticos pasan más tiempo de lo debido montados en nuestros coches, muchas veces en condiciones que ponen en riesgo la seguridad durante la conducción.
+            <p class="about">
+                <p class=>  <img class="img-fluid"src="https://img.remediosdigitales.com/7d63d4/tyre-1714669_1280/1366_2000.jpg"></img></p>
+    
+            <p class="about"> Este es un error muy común en buena parte de los conductores, pero no por eso se trata de un error menor. Hay que recordar que los neumáticos son un punto vital en la seguridad del automóvil, ya que suponen el único punto de contacto entre el suelo y el vehículo.</p>
+            <a href="https://www.youtube.com/watch?v=EHT3o4Pe8PU" target="_blank"><h4 class="">Presiona aca para ver un video explicativo</h4></a>
 
             
         </section>
-        <nav class="border">
-            <ul class="menu-flex">
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="./productos.html"> Productos </a> </li>
-                <li> <a href="./ideas.html"> Ideas y consejos </a> </li>
-                <li> <a href="./quienes_somos.html"> Quienes somos </a> </li>
-                <li> <a href="./contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
-        <footer class="border footer"><p>todos los derechos reservados 2022</p></footer>
+        
+        <footer class="border footer">
+            <p>todos los derechos reservados 2022</p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        </footer>
 </body>
 </div>
 </div>

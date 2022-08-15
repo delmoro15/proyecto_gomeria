@@ -5,47 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/gridsarea.css">
 </head>
-<body>
+<body >
     <div id="grid">
         <header class="border"> <img src="../img/logo_negro.png" class="logo"> </img></header>
         
-        <section id="articulo" class="border">    
-            <h3 class="gradiente"> Te presentamos la nueva cubierta Sense-2 </h3>
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img> 
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img> 
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img>
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img> 
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img> 
-
-            <img class= "img animacion"src="https://http2.mlstatic.com/D_NQ_NP_631616-MLA42445172719_072020-O.webp" > </img> 
-
-
-
-            <p> Te acompañara en cualquier camino, brindandote la mejor comodidad </p>
+        <section id="articulo" class="border">  
+                        
+          <nav class="navbar navbar-light bg-light sticky-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Menu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html"> Productos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./ideas.html"> Ideas y consejos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./quienes_somos.html"> Quienes somos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html"> Contacto </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Proximamente
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                                <li>
+                                <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+            
             </section>
         <section id="articulo2" class="border">
-            <h3 class="gradiente">Todos nuestros productos tambien puedes ubicarlos a traves de Mercadolibre:</h3>
-            <iframe src="https://listado.mercadolibre.com.ar/pirelli#D[A:pirelli]" height="900" width="100%"> </iframe>
+          <h3 class="gradiente scale-up-center">Clickea la marca de tu cubierta</h3>  
+
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="https://www.mercadolibre.com.ar/neumatico-firestone-f-series-f-600-p-18565r14-86-t/p/MLA15037789?pdp_filters=category:MLA22195#searchVariation=MLA15037789&position=2&search_layout=stack&type=product&tracking_id=45df4657-ec75-4dfa-9c48-c792f4dd7fdc"><img src="https://http2.mlstatic.com/D_NQ_NP_771837-MLA50738955243_072022-O.webp" class="img border scale-up-center" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="text-light"><strong>Firestone</strong></h4>
+                      
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <a href="https://www.mercadolibre.com.ar/neumatico-yokohama-bluearth-es-es32-p-20555r16-91-v/p/MLA15567881?pdp_filters=category:MLA22195#searchVariation=MLA15567881&position=2&search_layout=stack&type=product&tracking_id=96ec8b9e-bb06-40c9-8afe-e58cd32eda29"><img src="https://http2.mlstatic.com/D_NQ_NP_787863-MLA48578072728_122021-O.webp" class="img border scale-up-center" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h4 class="text-light"><strong>Yokohama</strong></h4>
+                        
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="https://articulo.mercadolibre.com.ar/MLA-748906697-neumatico-nexen-205-70-16-96h-npriz-ah8-cubierta-envio-_JM#reco_item_pos=1&reco_backend=machinalis-seller-items-pdp&reco_backend_type=low_level&reco_client=vip-seller_items-above&reco_id=69e9a8ba-9d90-464c-85a0-d69a9ca8fbc5"><img src="https://http2.mlstatic.com/D_NQ_NP_661652-MLA28191302156_092018-O.webp" class="img border scale-up-center" alt="..."></a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <h4 class="text-light"><strong> Nexen</strong></h4>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>    
+            <h3 class="gradiente scale-up-center">Todos nuestros productos tambien puedes ubicarlos a traves de Mercadolibre:</h3>
+            <iframe src="https://listado.mercadolibre.com.ar/cubiertas#D[A:cubiertas%20]" height="900" width="100%"> </iframe>
 
             
         </section>
-        <nav class="border">
-            <ul class="menu-flex">
-                <li> <a href="../index.html"> Inicio </a> </li>
-                <li> <a href="./productos.html"> Productos </a> </li>
-                <li> <a href="./ideas.html"> Ideas y consejos </a> </li>
-                <li> <a href="./quienes_somos.html"> Quienes somos </a> </li>
-                <li> <a href="./contacto.html"> Contacto </a> </li>
-            </ul>
-        </nav>
-        <footer class="border footer"><p>todos los derechos reservados 2022</p></footer>
+      
+
+        
+        <footer class="border footer">
+            <p>todos los derechos reservados 2022</p>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        </footer>
 </body>
 </html>
 
