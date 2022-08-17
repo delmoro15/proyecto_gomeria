@@ -1,0 +1,182 @@
+
+
+/** SMARTPHONE  */
+/* TABLET */
+@media (min-width: 481px) and (max-width: 1023px){
+        #grid {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "articulo"
+    "articulo2"
+    "footer";
+    grid-template-rows: 100px 1fr 1fr 1fr 25px; 
+    grid-template-columns: 90%;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    height: 100vh;
+    width: 98%;
+    margin: 1px 1px 3px 20px;	
+}}
+
+*{ text-align: center;}
+
+
+.border {
+    border: 1px solid black;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+footer {
+    color: rgb(102, 255, 0);
+    font-weight: bold;
+    background-color: black;
+}
+section#productos {
+    grid-area: articulo2; 
+}
+
+section#servicios {
+    grid-area: articulo;     
+}
+
+
+
+    .logo {
+        width:250px;
+        height:100px;
+    }
+    
+    #articulo2{ background-color: rgb(255, 255, 255); 
+        text-align: justify;
+    }
+    #articulo {background-color: rgb(255, 255, 255);
+        text-align: justify;}
+
+    .img{ margin:1px 1px 1px 90px;
+    width: 250px;
+    height: 200px;}
+
+.centrar{text-align: center;
+    justify-content: center;
+    align-items: center;}
+
+    h1,h2,h3,h4{margin: 12px 2px 12px 2px;}
+
+    ol{
+        display: flex;
+        text-decoration: underline black;
+        margin: 5px}
+
+
+body{
+    background-image: url(https://s3-eu-west-1.amazonaws.com/pirelli-prod/driver/7568_Pzero_Slide.jpg);
+    background-repeat:initial;
+    }
+
+/* Desktop */
+    @media (min-width: 1024px) { footer {
+        color: rgb(233, 39, 39);
+        font-weight: bold;
+        background-color: black;
+    }
+    
+    .img { 
+        width: 500px;
+        height: 70vh;
+        margin: 5px 5px 5px 30%
+    }
+    
+    #articulo2 { padding: 20px;}
+
+    .centrar {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    }
+
+    
+@media (max-width: 480px) {
+
+    #grid {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "articulo"
+    "articulo2"
+    "footer";
+    grid-template-rows: 100px 1fr 1fr 1fr 25px; 
+    grid-template-columns: 90%;
+    grid-row-gap: 2px;
+    grid-column-gap: 2px;
+    height: 100vh;
+    width: 100%;
+    margin: 1px 1px 3px 9px;	
+}
+
+*{ text-align: center;
+font-size: 14px;}
+
+.border {
+    border: 1px solid black;
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    background-color: rgb(245, 245, 245);
+    font-weight: bold;
+    height: 40px;
+    color:rgb(0, 195, 255)
+}
+section#productos {
+    grid-area: articulo2; 
+}
+
+section#servicios {
+    grid-area: articulo;     
+}
+
+
+
+    #articulo2{ background-color: rgb(255, 255, 255); 
+        text-align: justify;
+    }
+    #articulo {background-color: rgb(255, 255, 255);
+        text-align: justify;}
+
+
+
+    fieldset{width: 90%;
+        text-align:center;
+        margin: 9.9px;}
+
+    .img{ margin:1px 1px 1px 30px;
+        width: 150px;
+        height: 140px;}
+
+    .logo {
+        width:200px;
+        height:100px;
+    }
+
+    ol{
+        text-decoration: underline black;
+        margin: 5px;
+        display: flex;
+        flex-flow: column wrap;}
+
+}
+
+
+

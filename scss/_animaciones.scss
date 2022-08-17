@@ -1,0 +1,53 @@
+
+.animacion:hover{
+    height:min-content;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.gradiente{
+    background-image: linear-gradient(120deg, rgb(179, 54, 37) 50%,rgb(0, 0, 0) 70%);
+    margin: 2px 1px 10px 1px ;
+    padding: 5px;
+    color: whitesmoke
+}
+
+.transicion {
+    transition: all 0.5s;
+    text-decoration: underline;
+
+}
+
+.transicion:hover{
+    width: 40%;
+    height: 25px;
+    background-color: black;
+    color:white;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.8s ease-out 0.2s ;
+	animation: scale-up-center 0.5s ease-out 0.1s ;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+@keyframes scale-up-center {
+    0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    }
+    100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+}
+
