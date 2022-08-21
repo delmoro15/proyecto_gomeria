@@ -106,14 +106,6 @@ body {
 }
 
 /* flex */
-/*
-.menu-flex{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content:space-evenly;
-    margin: 5px 5px 5px -25px;
-}
-*/
 .contact-flex {
   display: flex;
   justify-content: center;
