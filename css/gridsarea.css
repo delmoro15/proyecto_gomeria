@@ -128,7 +128,7 @@ body {
 }
 
 .boton {
-  padding: 20px;
+  padding: 21px;
 }
 
 /** SMARTPHONE  */
@@ -308,7 +308,7 @@ body {
 }
 
 .gradiente {
-  background-image: linear-gradient(120deg, rgb(179, 54, 37) 50%, rgb(0, 0, 0) 70%);
+  background-image: linear-gradient(120deg, rgb(180, 13, 13) 50%, rgb(0, 0, 0) 70%);
   margin: 2px 1px 10px 1px;
   padding: 5px;
   color: whitesmoke;
