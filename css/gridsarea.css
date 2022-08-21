@@ -123,6 +123,14 @@ body {
   align-items: flex-start;
 }
 
+.texto-carrusel {
+  margin: 10px 2px 2px 2px;
+}
+
+.boton {
+  padding: 20px;
+}
+
 /** SMARTPHONE  */
 /* TABLET */
 @media (min-width: 481px) and (max-width: 1023px) {
