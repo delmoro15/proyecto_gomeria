@@ -11,25 +11,19 @@
     line-height: 0.6cm;
 }
 
-a:any-link{
-    color:rgb(0, 0, 0);
-    text-decoration:none;}
-    
-a:hover {
-    color:rgb(255, 0, 0);
-    }
+.margen-redes {margin: 5px 2px -90px -928px;}
 
-.link-negro {color:black;
-    text-align: left;}
 
 .logo {
     width:400px;
     height:110px;
     padding: 1px 1px 8px 1px;
+    margin: 5px 5px 5px 5px;
     }
+
     .centrar {text-align:center}
 
-    .lista-menu {text-align: start;}
+
 
     .about{
         padding:8px;
@@ -50,19 +44,20 @@ ol {
     display: grid;
     grid-template-areas:
     "header header"
-    "nav articulo"
-    "nav articulo2"
+    "main main"
     "footer footer";
     grid-template-rows: 100px 1fr 1fr 25px; 
     grid-template-columns: 10% 90%;
-    grid-row-gap: 1px;
-    grid-column-gap: 8px;
+    grid-row-gap: 2px;
+    grid-column-gap: 5px;
     height: 100vh;
-    margin: 0;	
+
+    margin: 45px 2px 1px 2px;	
 }
 .border {
     border: 1px solid black;
 }
+
 
 header {
     grid-area: header;
@@ -73,14 +68,11 @@ footer {
     background-color: rgb(245, 245, 245);
     text-align: center;
 }
-section#productos {
-    grid-area: articulo2; 
+main {
+    grid-area: main; 
 }
 
-section#servicios {
-    grid-area: articulo;     
-}
-
+nav {grid-area: nav;}
 
 
 body{
@@ -88,12 +80,6 @@ body{
     background-position: -80px;
     }
 
-#articulo2{ background-color: rgb(255, 255, 255);
-    text-align: center; 
-    }
-#articulo {background-color: rgb(255, 255, 255);
-    text-align: center;
-    }
 
 .img {width:380px;
     height: 290px;}
@@ -125,5 +111,6 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import "responsive";
 @import "animaciones";
+@import "sass2";
 
 
