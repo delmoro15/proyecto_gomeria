@@ -92,10 +92,11 @@ body{
         border-style: none;
         }
 
-        .imagen-redes{width:420px;
-            height:30vh;
-        margin: 10px 2px 2px 420px;}
-    }
+        .imagen-redes{width:620px;
+            height:70vh;
+        margin: 10px 2px 2px 320px;}
+        
+        .container{ margin:20px 10px 10px 30px;}}
 
 
 /* RESPONSIVE */
@@ -180,9 +181,9 @@ footer {
         flex-flow: column wrap;}
 
     .imagen-redes{
-        margin:1px 1px 1px 15px;
-        width: 180px;
-        height: 120px;}
+        margin:1px;
+        width: 200px;
+        height: 60vh;}
 
 }
 
