@@ -1,85 +1,89 @@
 /* anidamiento a: */
 
 a:any-link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 &:hover {
-    color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 }
 
 /***EXTEND y anidamiento ***/ /*esta en la pagina contact*/
 
 .boton-azul {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    overflow: hidden;
-    border-radius: 5px;
-    border: none;
-    background-color: #3a86ff;
-    margin: 2px 2px 20px 2px;
-    
-  &:hover {
-    border-radius: 5px;
-    padding-right: 24px;
-    padding-left:8px;
-  }
-  &:after {
-    opacity: 1;
-    right: 10px;
-  }
-  &:after {
-    content: "\00BB";
-    position: absolute;
-    opacity: 0;
-    font-size: 20px;
-    line-height: 40px;
-    top: 0;
-    right: -20px;
-    transition: 0.4s;
-  }}
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #3a86ff;
+  margin: 2px 2px 20px 2px;
+  
+&:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left:8px;
+}
+&:after {
+  opacity: 1;
+  right: 10px;
+}
+&:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}}
 
-  .boton-verde {
+.boton-verde {
 @extend .boton-azul;
 background-color: green;
 }
 
-  /* MIXIN */
+/* MIXIN */
 
-  @mixin dimensionimagen($anchoimagen, $altoimagen) {
-    width: $anchoimagen;
-    height: $altoimagen;
-  }
+@mixin dimensionimagen($anchoimagen, $altoimagen) {
+  width: $anchoimagen;
+  height: $altoimagen;
+}
 
-  .imagen {
-    @include dimensionimagen(420px,30vh )
-  }
+.imagen {
+  @include dimensionimagen(420px,30vh )
+}
 
 /* Maps */
 
 $botonredes:(
 
-  twitter:cyan,
-  facebook:blue,
-  youtube:red,
-  
+twitter:cyan,
+facebook:blue,
+youtube:red,
+
 
 );
 
 @each $redes, $colores in $botonredes {
 
-  .boton-#{$redes} {
-    background-color: $colores;
-  }
+.boton-#{$redes} {
+  background-color: $colores;
+}
 }
 
-
-
+.boton-facebook {@extend .boton-azul;
+}
+.boton-twitter {@extend .boton-azul;
+color:rgb(0, 0, 0)}
+.boton-youtube {@extend .boton-azul;
+color:rgb(0, 0, 0)}
