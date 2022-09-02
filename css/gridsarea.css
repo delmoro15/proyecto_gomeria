@@ -207,7 +207,7 @@ body {
     grid-column-gap: 5px;
     height: 100vh;
     width: 98%;
-    margin: 1px 1px 3px 20px;
+    margin: 40px 1px 3px 20px;
   }
 }
 /** SMARTPHONE  */
@@ -221,7 +221,7 @@ body {
     grid-column-gap: 2px;
     height: 100vh;
     width: 100%;
-    margin: 1px 1px 3px 9px;
+    margin: 40px 1px 3px 9px;
   }
   * {
     text-align: center;
@@ -323,7 +323,7 @@ a:any-link:hover {
 }
 
 /***EXTEND y anidamiento ***/ /*esta en la pagina contact*/
-.boton-azul, .boton-verde {
+.boton-azul, .boton-youtube, .boton-twitter, .boton-facebook, .boton-verde {
   min-width: 130px;
   height: 40px;
   color: #fff;
@@ -340,16 +340,16 @@ a:any-link:hover {
   background-color: #3a86ff;
   margin: 2px 2px 20px 2px;
 }
-.boton-azul:hover, .boton-verde:hover {
+.boton-azul:hover, .boton-youtube:hover, .boton-twitter:hover, .boton-facebook:hover, .boton-verde:hover {
   border-radius: 5px;
   padding-right: 24px;
   padding-left: 8px;
 }
-.boton-azul:after, .boton-verde:after {
+.boton-azul:after, .boton-youtube:after, .boton-twitter:after, .boton-facebook:after, .boton-verde:after {
   opacity: 1;
   right: 10px;
 }
-.boton-azul:after, .boton-verde:after {
+.boton-azul:after, .boton-youtube:after, .boton-twitter:after, .boton-facebook:after, .boton-verde:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -381,6 +381,14 @@ a:any-link:hover {
 
 .boton-youtube {
   background-color: red;
+}
+
+.boton-twitter {
+  color: rgb(0, 0, 0);
+}
+
+.boton-youtube {
+  color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=gridsarea.css.map */
