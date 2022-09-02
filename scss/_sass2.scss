@@ -11,10 +11,10 @@ a:any-link {
 /***EXTEND y anidamiento ***/ /*esta en la pagina contact*/
 
 .boton-azul {
-  min-width: 130px;
-  height: 40px;
+  height: 50px;
+  min-width: 160px;
   color: #fff;
-  padding: 5px 10px;
+  padding: 4px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -50,6 +50,8 @@ a:any-link {
 .boton-verde {
 @extend .boton-azul;
 background-color: green;
+height: 50px;
+min-width: 160px;
 }
 
 /* MIXIN */
@@ -67,7 +69,7 @@ background-color: green;
 
 $botonredes:(
 
-twitter:cyan,
+twitter:rgb(0, 140, 255),
 facebook:blue,
 youtube:red,
 
@@ -84,6 +86,6 @@ youtube:red,
 .boton-facebook {@extend .boton-azul;
 }
 .boton-twitter {@extend .boton-azul;
-color:rgb(0, 0, 0)}
+}
 .boton-youtube {@extend .boton-azul;
-color:rgb(0, 0, 0)}
+}
