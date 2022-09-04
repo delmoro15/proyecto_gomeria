@@ -14,8 +14,9 @@ $color-gradiente: (120deg, rgb(180, 13, 13) 50%,rgb(0, 0, 0) 70%);
 }
 
 .transicion {
-    transition: all 0.5s;
+    transition: all 0s;
     text-decoration: underline;
+    text-align: start;
 
 }
 
