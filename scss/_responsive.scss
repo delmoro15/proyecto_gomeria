@@ -52,16 +52,9 @@ footer {
     width: 250px;
     height: 200px;}
 
-.centrar{text-align: center;
-    justify-content: center;
-    align-items: center;}
+    h1, h2, h3, h4{ font-size: 18px;
+    font-weight: bold;}
 
-    h1,h2,h3,h4{margin: 12px 2px 12px 2px;}
-
-    ol{
-        display: flex;
-        text-decoration: underline black;
-        margin: 5px}
 
 
 body{
@@ -81,7 +74,6 @@ body{
     .img { 
         width: 420px;
         height: 58vh;
-        margin: 1px 1px 1px 33% ;
     }
     
     section{padding:0px 10px 5px 10px;}
