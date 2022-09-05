@@ -9,14 +9,6 @@
 }
 
 /* ESTILOS GENERALES */
-.parent {
-  text-align: center;
-}
-
-.margen-redes {
-  margin: 5px 2px -90px -928px;
-}
-
 .logo {
   width: 400px;
   height: 110px;
@@ -75,6 +67,12 @@ body {
 .img {
   width: 380px;
   height: 290px;
+}
+
+.img-redes {
+  width: 130px;
+  height: 105px;
+  margin: 35px;
 }
 
 /* flex */
@@ -209,10 +207,10 @@ body {
     width: 98%;
     margin: 50px 1px 3px 20px;
   }
-  .imagen-redes {
-    margin: 1px 1px 1px 30px;
-    width: 350px;
-    height: 240px;
+  .img-redes {
+    width: 105px;
+    height: 95px;
+    margin: 35px;
   }
 }
 /** SMARTPHONE  */
@@ -259,10 +257,10 @@ body {
     width: 200px;
     height: 100px;
   }
-  .imagen-redes {
-    margin: 1px;
-    width: 200px;
-    height: 60vh;
+  .img-redes {
+    width: 75px;
+    height: 75px;
+    margin: 35px;
   }
 }
 /* animaciones */
@@ -318,6 +316,15 @@ body {
     transform: scale(1);
   }
 }
+.box:hover {
+  transform: scale(1.2, 1.2);
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+.box:hover::after {
+  opacity: 1;
+}
+
 /* anidamiento a: */
 a:any-link {
   color: rgb(0, 0, 0);

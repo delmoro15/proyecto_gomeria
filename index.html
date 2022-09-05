@@ -15,6 +15,54 @@
     <div id="grid"> 
         
         <header class="centrar"> <a href="/index.html"> <img src="./img/logo_negro.png" class="logo"> </img></a></header> 
+            <!--- NAV  !-->
+        <nav class="navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="./html/productos.html"> Productos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/ideas.html"> Ideas y consejos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/quienes_somos.html"> Quienes somos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./html/contacto.html"> Contacto </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Proximamente
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                        <li>
+                        <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Proximamente</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </form>
+                </div>
+            </div>
+            </div>
+        </nav>
         <main>
             <section id="articulo2" class="">
                 <h1 class="gradiente scale-up-center"> Conocé la nueva Sense-2</h1>
@@ -39,56 +87,8 @@
     <footer>
         <p>todos los derechos reservados 2022</p>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/js.js"></script>
     </footer>
-    <!--- NAV  !-->
-    <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button class="navbar-toggler boton-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-            <h2 class="offcanvas-title" id="offcanvasNavbarLabel">Selecciona</h2>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active " aria-current="page" href="./html/productos.html"> Productos </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./html/ideas.html"> Ideas y consejos </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./html/quienes_somos.html"> Quienes somos </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./html/contacto.html"> Contacto </a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Proximamente
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
-                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
-                    <li>
-                    <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Proximamente</a></li>
-                </ul>
-                </li>
-            </ul>
-            </form>
-            </div>
-        </div>
-        </div>
-    </nav> 
-
     </div>
 </body>
 </html>

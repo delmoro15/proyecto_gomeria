@@ -55,3 +55,11 @@ $color-gradiente: (120deg, rgb(180, 13, 13) 50%,rgb(0, 0, 0) 70%);
     }
 }
 
+.box:hover {
+    transform: scale(1.2, 1.2);
+  }
+  
+  /* Fade in the pseudo-element with the bigger shadow */
+  .box:hover::after {
+    opacity: 1;
+  }
